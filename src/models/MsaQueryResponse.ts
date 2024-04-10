@@ -65,7 +65,7 @@ export function MsaQueryResponseFromJSONTyped(json: any, ignoreDiscriminator: bo
         return json;
     }
     return {
-        errors: (json["errors"] as Array<any>).map(MsaAPIErrorFromJSON),
+        errors: ((json["errors"] || []) as Array<any>).map(MsaAPIErrorFromJSON),
         meta: MsaMetaInfoFromJSON(json["meta"]),
         resources: json["resources"],
     };
@@ -79,7 +79,7 @@ export function MsaQueryResponseToJSON(value?: MsaQueryResponse | null): any {
         return null;
     }
     return {
-        errors: (value.errors as Array<any>).map(MsaAPIErrorToJSON),
+        errors: ((value.errors || []) as Array<any>).map(MsaAPIErrorToJSON),
         meta: MsaMetaInfoToJSON(value.meta),
         resources: value.resources,
     };
