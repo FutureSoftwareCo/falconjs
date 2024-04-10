@@ -1,5 +1,5 @@
 {
-    "name": "crowdstrike-falcon",
+    "name": "crowdstrike-falcon-1rocket",
     "version": "0.2.4",
     "description": "CrowdStrike Falcon API library for browser and node",
     "sideEffects": false,
@@ -37,14 +37,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/crowdstrike/falconjs.git"
+        "url": "git+https://github.com:FutureSoftwareCo/falconjs.git"
     },
     "keywords": [
         "CrowdStrike",
         "Falcon",
         "SDK"
     ],
-    "author": "Simon Lukasik",
+    "author": "Simon Lukasik Modified By Emmanuel",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/crowdstrike/falconjs/issues"
